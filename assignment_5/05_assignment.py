@@ -100,7 +100,7 @@ def exercise08():
     '''
 
     # ------ Place code below here \/ \/ \/ ------
-    df = pd.read_csv('assignment_5/data.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/data602sps/assignments/master/Sacramentorealestatetransactions.csv')
     row_count = df.shape[0]
     avg_sq_ft = df.loc[:, 'sq__ft'].mean()
     df_zip_95670 = df[df['zip'] == 95670]
@@ -173,7 +173,7 @@ def exercise15():
     and just the street address and zip code columns. This can be done with one line of code.
     '''
     # ------ Place code below here \/ \/ \/ ------
-    df = pd.read_csv('assignment_5/data.csv').iloc[lambda x: x.index % 5 == 0,[0,2]]
+    df = pd.read_csv('https://raw.githubusercontent.com/data602sps/assignments/master/Sacramentorealestatetransactions.csv').iloc[lambda x: x.index % 5 == 0,[0,2]]
     # ------ Place code above here /\ /\ /\ ------ 
     return df
 
